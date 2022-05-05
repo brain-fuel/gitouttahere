@@ -22,7 +22,8 @@
     [:meta {:name "viewport"
             :content "width=device-width, initial-scale=1.0"}]
     [:title "Git Outta Here"]
-    [:link {:rel "stylesheet" :href (link/file-path request "/styles/main.css")}]]
+    [:link {:rel "stylesheet" :href (link/file-path request "/styles/main.css")}]
+    [:link {:rel "stylesheet" :href (link/file-path request "/styles/autumn.css")}]]
    [:body
     [:div.logo "gitouttahere.org"]
     [:div.body page]]))
@@ -46,7 +47,9 @@
      (markdown-pages (stasis/slurp-directory "resources/md" #".*\.md$"))}))
 
 (defn prepare-page [page req]
-  (-> (if (string? page) page (page req))
+  (-> (if (string? page)
+        page
+        (page req))
       highlight-code-blocks))
 
 (defn prepare-pages [pages]
@@ -54,7 +57,8 @@
           (map #(partial prepare-page %) (vals pages))))
 
 (defn get-pages []
-  (prepare-pages (get-raw-pages)))
+  (-> (get-raw-pages)
+      (prepare-pages)))
 
 (def app
   (optimus/wrap (stasis/serve-pages get-pages)
