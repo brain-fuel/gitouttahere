@@ -8,7 +8,6 @@ FIXME
 
 ## License
 
-<<<<<<< HEAD
 Copyright © 2022 Matt Laine
 
 The source code is made available under the terms of the GNU GENERAL PUBLIC LICENSE Version 3
