@@ -8,15 +8,10 @@ FIXME
 
 ## License
 
-Copyright © 2022 FIXME
+Copyright © 2022 Matt Laine
 
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
+The source code is made available under the terms of the GNU GENERAL PUBLIC LICENSE Version 3
 
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+All non-source-code materials are made available under the terms of the Creative Commons Attribution-ShareAlike 4.0 International License.
+
+The text of both licenses is available in this repository in the LICENSE file.
