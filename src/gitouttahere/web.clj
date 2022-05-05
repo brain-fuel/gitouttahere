@@ -23,7 +23,7 @@
             :content "width=device-width, initial-scale=1.0"}]
     [:title "Git Outta Here"]
     [:link {:rel "stylesheet" :href (link/file-path request "/styles/main.css")}]
-    [:link {:rel "stylesheet" :href (link/file-path request "/styles/autumn.css")}]]
+    [:link {:rel "stylesheet" :href (link/file-path request "/styles/autumn-code.css")}]]
    [:body
     [:div.logo "gitouttahere.org"]
     [:div.body page]]))
